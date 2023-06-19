@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-l!nhqf=$mq#60p-8=^-!)&n-j3n-a$nf7ag%h(jlevbanl08%9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -98,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -128,3 +128,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # 커스텀 유저 모델 사용
 AUTH_USER_MODEL = 'user.User'
+
+LOGIN_REDIRECT_URL = '/content/'
